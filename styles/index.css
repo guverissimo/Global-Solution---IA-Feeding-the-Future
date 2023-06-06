@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Titillium+Web:wght@200;400;600&display=swap');
+
+
+:root {
+    --fonte-principal: 'Titillium Web', sans-serif;
+    --fonte-titulo: 'Russo One', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#home {
+    background-image: url("../imagens/plantacao-de-soja.png"); 
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    height: 100px;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.header img {
+    width: 100px;
+}
+
+.header ul li {
+    display: inline-block;
+}
+
+#nav_links {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    text-shadow: white 0px 0 10px;
+    padding: 5px;
+}
+
+#nav_links:hover {
+    color: white;
+    text-shadow: rgb(0, 116, 70) 0px 0 10px;
+}
+
+.titulo {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 3%;
+}
+
+.titulo h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 80px;
+    color: white;
+    padding: 10%;
+    padding-bottom: 0 ;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+
+.titulo a {
+    text-decoration: none;
+    background-color: rgb(0, 116, 70);
+    text-shadow: black 1px 0 10px;
+    color: white;
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.nav__cor img{
+    width: 30px;
+}
+
+#icon:hover {
+    width: 28px;
+}
+
+
+.titulo_link {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo_link a {
+    width: 20%;
+    text-align: center;
+}
+
+.titulo_link a:hover {
+    background-color:rgb(0, 76, 45); ;
+}
+
+.titulo_imagem {
+    margin: 5%;
+}
+
+#box-link {
+    display: flex;
+    margin-left: 10%;
+    gap: 10px;
+}
+
+#problema {
+    height: 100vh;
+}
+
+
+.rodape {
+    background-color: #131313;
+    height: 70vh;
+}
