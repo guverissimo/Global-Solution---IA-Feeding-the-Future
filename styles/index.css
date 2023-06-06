@@ -183,7 +183,7 @@
     font-family: var(--fonte-principal);
  }
 
- .tecnologia-text p {
+.tecnologia-text p {
     margin-top: 20rem;
     margin-left: 50%;
     background-color: #00380b;
@@ -191,7 +191,49 @@
     padding: 2%;
     border-radius: 18px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
- }
+}
+
+#beneficios{
+    font-family: var(--fonte-principal);
+    margin: 5%;
+}
+
+.title-beneficios {
+    font-family: var(--fonte-principal);
+    font-size: 40px;
+    display: flex;
+    margin-bottom: 3%;
+    gap: 20px;
+}
+
+.title-beneficios img {
+    width: 100px;
+}
+
+.text-beneficios {
+    margin: 0;
+    justify-content: center;
+}
+
+.beneficios-img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 20px;
+}
+
+.beneficios-box {
+    width: 220px;
+    height: 250px;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 0 20px;
+}
 
 .rodape {
     background-color: #131313;
