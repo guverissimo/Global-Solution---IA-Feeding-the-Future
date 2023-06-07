@@ -86,6 +86,24 @@
     width: 30px;
 }
 
+.nav__cor {
+    display: flex;
+    gap: 50px;
+}
+
+.login {
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    background-color: rgb(0, 116, 70);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.login:hover {
+    background-color:rgb(0, 76, 45);
+}
+
 #icon:hover {
     width: 28px;
 }
@@ -121,8 +139,13 @@
 }
 
 #publico{
-    height: auto;
+    height: 60vh;
     margin: 5%;
+}
+
+#publico-slide {
+    max-width: 600px;
+    max-height: 600px;
 }
 
 .layout {
@@ -246,7 +269,7 @@
     color: white;
     font-family: var(--fonte-principal);
     font-size: 24px;
-    padding-top: 1%;
+    padding-top: 0.5%;
     text-align: center;
 }
 
@@ -256,7 +279,7 @@
 }
 
 .rodape iframe {
-    margin: 5% 0;
+    margin: 1% 0;
 }
 
 #endereco {
@@ -269,7 +292,7 @@
 .rodape-logo {
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    padding: 2%;
 
     justify-content: center;
     align-items: center;

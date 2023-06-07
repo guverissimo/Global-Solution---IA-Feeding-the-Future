@@ -1,3 +1,5 @@
+alert("Seja Bem-vindo")
+
 function trocar(fundo, cor) {
     document.body.style.background = fundo
     document.body.style.color = cor
@@ -57,3 +59,23 @@ function validarTel() {
         span.style.marginBottom = '4px'; 
     } 
 }     
+
+var imagens = [
+    '/imagens/plantacao-de-soja.png',
+    '/imagens/agricultor.jpg',
+    'imagens/grande-plantil.jpg',
+    'imagens/plantil-pequeno.jpg',
+    'imagens/dhBB91kw.jpg'
+];
+
+var Index = 0;
+var time = 2000;
+
+function slideShow() {
+    document.getElementById('publico-slide').src = imagens[Index];
+    Index++;
+    if (Index == imagens.length) { Index = 0; }
+    setTimeout("slideShow()", time);
+}
+slideShow();
+
