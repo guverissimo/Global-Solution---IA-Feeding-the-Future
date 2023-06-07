@@ -102,7 +102,7 @@
 }
 
 .titulo_link a:hover {
-    background-color:rgb(0, 76, 45); ;
+    background-color:rgb(0, 76, 45);
 }
 
 .titulo_imagem {
@@ -136,15 +136,16 @@
     align-items: center;
     gap: 40px;
     font-size: 48px;
-    line-height: 60px;
+    line-height: 60px; 
     margin: 2%;
+    font-family: var(--fonte-principal);
 }
 
 .text {
     margin: 5%;
     margin-left: 15%;
     font-size: 18px;
-    color: #807f7f
+    color: #807f7f;
 }
 
 .title img{
@@ -161,10 +162,11 @@
     height: 100vh;
 }
 
- .tecnologia-title {
+ .tecnologia__title {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     margin: 0;
  }
@@ -231,8 +233,21 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 20px;
+}
+
+.title-contato {
+    display: flex;
+    font-size: 30px;
+}
+
+#date {
+    color: white;
+    font-family: var(--fonte-principal);
+    font-size: 24px;
+    padding-top: 1%;
+    text-align: center;
 }
 
 .rodape {
@@ -244,10 +259,18 @@
     margin: 5% 0;
 }
 
+#endereco {
+    color: white;
+    font-family: var(--fonte-principal);
+    font-size: 24px;
+    text-align: center;
+}
+
 .rodape-logo {
     display: flex;
     flex-direction: column;
-    margin: 0 10%;
+    padding: 5%;
+
     justify-content: center;
     align-items: center;
     color: white;

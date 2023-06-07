@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/contato.css">
 
     <link rel="shortcut icon" href="./imagens/shortcunicon.png" type="image/x-icon">
 
@@ -21,25 +22,25 @@
                         <a id="nav_links" href="#home">Home</a> 
                     </li>
                     <li> 
-                        <a id="nav_links" href="#">Section</a> 
+                        <a id="nav_links" href="#problema">Problema</a> 
                     </li>
                     <li> 
-                        <a id="nav_links" href="#">Section</a> 
+                        <a id="nav_links" href="#publico">Publico</a> 
                     </li>
                     <li> 
-                        <a id="nav_links" href="#">Section</a> 
+                        <a id="nav_links" href="#tecnologia">Tecnologia</a> 
                     </li>
                     <li> 
-                        <a id="nav_links" href="#">Section</a> 
+                        <a id="nav_links" href="#beneficios">Beneficios</a> 
                     </li>
                     <li> 
-                        <a id="nav_links" href="#">Section</a> 
+                        <a id="nav_links" href="#contato">Contato</a> 
                     </li>
                 </ul>
             </nav>
             <div class="nav__cor">
                 <img id="icon" src="./imagens/icons8-sol-50.png" class="car light" onclick="trocar('white', 'black')">
-                <img id="icon" src="./imagens/icons8-dark-50.png" class="car dark" onmousedown="trocar('black', 'white')">
+                <img id="icon" src="./imagens/icons8-dark-50.png" class="car dark" onclick="trocar('black', 'white')">
             </div>
         </header>
 
@@ -102,7 +103,7 @@
     </section>
 
     <section id="tecnologia">
-        <div class="title tecnologia-title">
+        <div class="title tecnologia__title">
             <h1>TECNOLOGIA</h1>
             <img src="./imagens/arvore-de-tecnologia.png" alt="Arvore de tecnologia">
         </div>
@@ -152,18 +153,61 @@
 
     </section>
 
+    <container id="contato" class="container">
+        
+        <form id="form">
+            <div> 
+
+                <h1 id="texto__contato">Entre em contato</h1>
+
+                <div id="texto">
+                    <label for="nome">Nome</label>
+                    <input id="nome" type="text" name="nome" placeholder="Insira seu Nome" required>
+                </div>
+
+                <div id="texto">
+                    <label for="tel">Telefone</label>
+                    <input id="tel" type="tel" name="tel" placeholder="Insira seu numero de telefone" onclick (validarTel())>
+                    <span id="span">Insira um numero de telefone válido</span>
+                </div>
+
+                <div id="texto">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" placeholder="Insira seu E-mail"onclick(validarEmail())>
+                    <span id="span">Insira um E-mail válido</span>
+                </div>
+
+                <div id="texto">
+                    <label for="msg">Mensagem:</label>
+                    <input id="msg" type="msg" name="msg" placeholder="Escreva uma mensagem" required >
+                </div>
+ 
+            </div>
+            
+            <input type="submit" value="Enviar" id="botao" onclick="validarEmail()">
+
+        </form>
+        
+    </container>
+
+    
+    
+    
+
 
     <footer class="rodape">
+        <p id="date"></p>
 
 
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1213642395815!2d-46.65496678919213!3d-23.56408427870955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7dbf9ff57%3A0x4ca8eb5c4f7ecca9!2sFIAP!5e0!3m2!1spt-BR!2sbr!4v1686072897862!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1213642395815!2d-46.65496678919213!3d-23.56408427870955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7dbf9ff57%3A0x4ca8eb5c4f7ecca9!2sFIAP!5e0!3m2!1spt-BR!2sbr!4v1686072897862!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <p id="endereco">Av. Paulista, 1106 - 7º andar - Bela Vista, São Paulo - SP, 01311-000</p>
         <div class="rodape-logo">
             <img src="./imagens/logo.png" alt="Logo G2M">
             <p>@2023 - All Rights Reserved</p>
         </div>
-        
     </footer>
-    <script src="./scripts/script.js"></script> 
+    <script src="./scripts/script.js"></script>
+    <script src="../script/cadastro.js"></script> 
 </body>
 </html>
